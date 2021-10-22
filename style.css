@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	position: absolute;
+}
+
+body {
+	height: 90vh;
+	width: 100vw;
+	background: #eee;
+}
+
+:root{
+	--bayangan: rgba(0,0,0,1);
+	--tanah: #36B336;
+	--tanahBawah: #39BF39;
+}
+
+#canvas {
+	height: 60vmin;
+	width: 80vmin;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 5vmin;
+	overflow: hidden;
+	background: #D2D2FF;
+}
+
+#canvas::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 5vmin;
+	box-shadow: inset 0 0 1vmin var(--bayangan);
+	z-index: 99;
+}
+
+#tanahBawah {
+	width: 100%;
+	height: 10vmin;
+	background: var(--tanah);
+	bottom: 0;
+}
+
+#jalan {
+	height: 7vmin;
+	width: 100%;
+	background: #B0B0B0;
+	bottom: 10vmin;
+}
+
+#tanahAtas {
+	height: 15vmin;
+	width: 100%;
+	background: var(--tanahBawah);
+	bottom: 17vmin;
+}
+
+.rumputAtas {
+	height: 3vmin;
+	width: 30vmin;
+	background: var(--tanah);
+	border-radius: 1.5vmin;
+	right: 15vmin;
+	top: 3vmin;
+}
+
+#ra1 {
+	right: 12vmin;
+	top: 6vmin;
+}
+
+.semakAtas {
+	height: 8vmin;
+	width: 8vmin;
+	background: #2E992E;
+	top: 22vmin;
+	left: 1vmin;
+	border-radius: 50%;
+}
+
+#sa1 {
+	height: 6vmin;
+	width: 6vmin;
+	left: 7vmin;
+	top: 24vmin;
+}
+
+.pohonAtas {
+	height: 10vmin;
+	width: 1vmin;
+	background: #32A632;
+	left: 22vmin;
+	bottom: 31vmin;
+}
+
+#pa1 {
+	left: 37vmin;
+	height: 12vmin;
+}
+
+.daunAtas {
+	width: 8vmin;
+	height: 12vmin;
+	background: #43BF43;
+	border-radius: 4vmin;
+	left: 18.5vmin;
+	bottom: 35vmin;
+}
+
+#da1 {
+	height: 10vmin;
+	width: 10vmin;
+	left: 32.5vmin;
+	bottom: 38vmin;
+	border-radius: 50%;
+}
+
+#pohonTengah {
+	height: 15vmin;
+	width: 7vmin;
+	background: #2E992E;
+	right: 5vmin;
+	top: 22vmin;
+}
+
+#pohonTengah1 {
+	height: 3vmin;
+	width: 12vmin;
+	background: #2E992E;
+	right: 2.5vmin;
+	top: 35vmin;
+	border-radius: 1.5vmin 1.5vmin 0 0;
+}
+
+#daunTengah {
+	height: 15vmin;
+	width: 20vmin;
+	background: #48CC48;
+	right: -1vmin;
+	top: 10vmin;
+	border-radius: 50% 50% 0 0
+}
+
+.kursiAtas,.kursiBawah {
+	height: 3vmin;
+	width: 12vmin;
+	background: #E6FFE6;
+	bottom: 7vmin;
+	left: 5vmin;
+}
+
+#kursiAtas1, #kursiBawah1 {
+	left: 19vmin;
+}
+
+.kursiBawah {
+	height: 1vmin;
+	bottom: 5vmin;
+	border-radius: .5vmin;
+}
+
+.kakiBangku {
+	height: 5vmin;
+	width: 1vmin;
+	background: #E6FFE6;
+	left: 6vmin;
+	top: 7vmin;
+}
+
+#kb1 {
+	left: 15vmin;
+}
+
+#kb2 {
+	left: 20vmin;
+}
+
+#kb3 {
+	left: 29vmin;
+}
+
+.rumputBawah {
+	width: 0;
+	height: 0;
+	border: 4vmin solid rgba(0,0,0,0);
+	border-width: 4vmin 3vmin;
+	border-bottom-color: #3D993D;
+	left: 5vmin;
+	bottom: 3vmin;
+}
+
+#rb1 {
+	left: 11vmin;
+}
+
+#rb2 {
+	left: 17vmin;
+}
+
+.semakBawah {
+	height: 11vmin;
+	width: 11vmin;
+	background: #3D993D;
+	border-radius: 50%;
+	right: -2vmin;
+	top: -5vmin;
+}
+
+#sb1 {
+	right: 5vmin;
+	height: 9vmin;
+	width: 9vmin;
+	top: -2vmin;
+}
+
+#sb2 {
+	height: 12vmin;
+	width: 12vmin;
+	right: 12vmin;
+	top: 2vmin;
+}
+
+#sb3 {
+	height: 15vmin;
+	width: 15vmin;
+	right: 0vmin;
+	top: 0vmin;
+}
+
+.awan {
+	height: 9vmin;
+	width: 9vmin;
+	background: #fff;
+	border-radius: 50%;
+	left: 14vmin;
+	bottom: 31vmin;
+}
+
+#a1 {
+	left: 21vmin;
+	bottom: 36vmin;
+}
+
+#a2 {
+	left: 27vmin;
+	bottom: 30vmin;
+}
+
+#a3 {
+	left: 27vmin;
+	bottom: 35vmin
+}
+
+#a4 {
+	left: 21vmin;
+}
+
+#a1::after {
+	content: '';
+	position: absolute;
+	left: 12vmin;
+	height: 9vmin;
+	width: 9vmin;
+	background: #fff;
+	border-radius: 50%;
+	bottom: -6vmin;
+}
